@@ -14,7 +14,7 @@ df = pd.read_csv("data/songs_with_prediction.csv")
 def side_menu(selected_page):
     page=st_navbar(["Home + US!", "♪ Artist", "📊 Stats", '🔮️Predictions'], selected=selected_page)
     if page == "Home + US!":
-        st.switch_page(page="pages/app.py")
+        st.switch_page(page="app.py")
     if page == "📊 Stats":
         st.switch_page(page="pages/📊 stats.py")
     if page == "🔮️Predictions":
